@@ -1,0 +1,13 @@
+@mixin modal-after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    opacity: 0;
+    animation: grow 4s forwards;
+    animation-delay: 0s;
+    animation-delay: .9s;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 28%;
+}

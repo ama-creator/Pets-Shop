@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Pets Shop</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header" style="background-image: url(img/header-bg.jpg);">
+    <div class="container">
+      <div class="header-top">
+        <a class="header-top__logo" href="#!">
+          <img class="header-top__logo-pic" src="img/svg/logo.svg" alt="">
+        </a>
+        <div class="header-top__nav">
+          <button class="header-top__btn" style="display: none;">
+            <span class="header-top__btn-line"></span>
+          </button>
+          <ul class="header-top__nav-list">
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#!">Main</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#!">Gallery</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#!">News</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#!">Profile</a></li>
+            <div class="header-top__links">
+              <a class="header-top__links-number" href="tel:544349000000">+544 3490 00000</a>
+              <span class="header-top__links-info">Звони скорее!</span>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <p class="header-bottom__count">Найдено 349 котов</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="container">
+      <form class="form content-filter">
+        <p class="content-filter__title">Сортировать по:</p>
+        <label class="content-filter__box content-filter__box--last">
+          Цене
+          <input class="content-filter__box-prise" id="sort-asc" type="checkbox" value="prise" name="prise">
+          <span class="content-filter__box-icon"></span>
+        </label>
+        <label class="content-filter__box">
+          Возрасту
+          <input class="content-filter__box-age" id="sort-age" type="checkbox" value="age" name="age">
+          <span class="content-filter__box-icon"></span>
+        </label>
+      </form>
+      <div class="content-wrapper">
+        <div class="content-product" data-sort="30000" data-age="2">
+          <div class="content-product__pic" style="background-image: url('img/cat-1.jpg');">
+            <span class="content-product__notice">-40%</span>
+            <svg class="content-product__like" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+            </svg>
+
+          </div>
+          <span class="content-product__title">Кот полосатый</span>
+          <div class="content-product__info">
+            <span class="content-product__info-color">Коричневый <br> окрас</span>
+            <span class="content-product__info-age">2 мес. <br> <span
+                class="content-product__info-detail">Возраст</span></span>
+            <span class="content-product__info-amount">4 <br> <span class="content-product__info-detail">Кол-во
+                лап</span></span>
+          </div>
+          <span class="content-product__prise">30 000 руб.</span>
+          <a class="content-product__btn" href="#!">Купить</a>
+        </div>
+
+        <div class="content-product" data-sort="40000" data-age="3">
+          <div class="content-product__pic" style="background-image: url('img/cat-2.jpg');">
+            <svg class="content-product__like content-product__like--active" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+            </svg>
+          </div>
+          <span class="content-product__title">Кот полосатый</span>
+          <div class="content-product__info">
+            <span class="content-product__info-color">Коричневый <br> окрас</span>
+            <span class="content-product__info-age">2 мес. <br> <span
+                class="content-product__info-detail">Возраст</span></span>
+            <span class="content-product__info-amount">4 <br> <span class="content-product__info-detail">Кол-во
+                лап</span></span>
+          </div>
+          <span class="content-product__prise">40 000 руб.</span>
+          <a class="content-product__btn content-product__btn--disabled" href="#!">Продан</a>
+        </div>
+
+        <div class="content-product" data-sort="20000" data-age="2">
+          <div class="content-product__pic" style="background-image: url('img/cat-3.jpg');">
+            <svg class="content-product__like" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+            </svg>
+          </div>
+          <span class="content-product__title">Кот полосатый</span>
+          <div class="content-product__info">
+            <span class="content-product__info-color">Коричневый <br> окрас</span>
+            <span class="content-product__info-age">2 мес. <br> <span
+                class="content-product__info-detail">Возраст</span></span>
+            <span class="content-product__info-amount">4 <br> <span class="content-product__info-detail">Кол-во
+                лап</span></span>
+          </div>
+          <span class="content-product__prise">20 000 руб.</span>
+          <a class="content-product__btn" href="#!">Купить</a>
+        </div>
+
+        <div class="content-product" data-sort="25000" data-age="2">
+          <div class="content-product__pic" style="background-image: url('img/cat-1.jpg');">
+            <svg class="content-product__like" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+            </svg>
+          </div>
+          <span class="content-product__title">Кот полосатый</span>
+          <div class="content-product__info">
+            <span class="content-product__info-color">Коричневый <br> окрас</span>
+            <span class="content-product__info-age">2 мес. <br> <span
+                class="content-product__info-detail">Возраст</span></span>
+            <span class="content-product__info-amount">4 <br> <span class="content-product__info-detail">Кол-во
+                лап</span></span>
+          </div>
+          <span class="content-product__prise">25 000 руб.</span>
+          <a class="content-product__btn" href="#!">Купить</a>
+        </div>
+
+        <div class="content-product" data-sort="30000" data-age="2">
+          <div class="content-product__pic" style="background-image: url('img/cat-3.jpg');">
+            <span class="content-product__notice">-40%</span>
+            <svg class="content-product__like" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+            </svg>
+          </div>
+          <span class="content-product__title">Кот полосатый</span>
+          <div class="content-product__info">
+            <span class="content-product__info-color">Коричневый <br> окрас</span>
+            <span class="content-product__info-age">2 мес. <br> <span
+                class="content-product__info-detail">Возраст</span></span>
+            <span class="content-product__info-amount">4 <br> <span class="content-product__info-detail">Кол-во
+                лап</span></span>
+          </div>
+          <span class="content-product__prise">30 000 руб.</span>
+          <a class="content-product__btn" href="#!">Купить</a>
+        </div>
+
+        <div class="content-product" data-sort="10000" data-age="2">
+          <div class="content-product__pic" style="background-image: url('img/cat-2.jpg');">
+            <svg class="content-product__like content-product__like--active" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+            </svg>
+          </div>
+          <span class="content-product__title">Кот полосатый</span>
+          <div class="content-product__info">
+            <span class="content-product__info-color">Коричневый <br> окрас</span>
+            <span class="content-product__info-age">2 мес. <br> <span
+                class="content-product__info-detail">Возраст</span></span>
+            <span class="content-product__info-amount">4 <br> <span class="content-product__info-detail">Кол-во
+                лап</span></span>
+          </div>
+          <span class="content-product__prise">10 000 руб.</span>
+          <a class="content-product__btn content-product__btn--disabled" href="#!">Продан</a>
+        </div>
+      </div>
+      <a class="content-more" href="#!">Показать еще 20</a>
+
+
+      <a href="#" id="toTop" class="content-btn"><svg class="content-btn__top" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+        <path d="M8.29764 3.99939L0.287559 12.0096C0.102145 12.1949 -8.06437e-08 12.4422 -6.91167e-08 12.7059C-5.75898e-08 12.9696 0.102145 13.2169 0.287559 13.4022L0.87731 13.9921C1.2616 14.3759 1.88618 14.3759 2.26988 13.9921L8.99627 7.2657L15.7301 13.9996C15.9155 14.1848 16.1627 14.2871 16.4263 14.2871C16.6901 14.2871 16.9373 14.1848 17.1228 13.9995L17.7124 13.4097C17.8979 13.2242 18 12.9771 18 12.7134C18 12.4497 17.8979 12.2023 17.7124 12.0171L9.69504 3.99939C9.50904 3.81368 9.26071 3.71168 8.99671 3.71227C8.73169 3.71168 8.48349 3.81368 8.29764 3.99939Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="18" height="18" fill="white" transform="translate(0 18) rotate(-90)"/>
+        </clipPath>
+        </defs>
+        </svg></a>
+
+
+        
+
+
+
+    </div>
+    <div class="content-modal">
+      <p class="content-modal__info">Спасибо за выбор! <br> Товар добавлен в корзину.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-info">
+          <p class="footer-info__title">Успей купить!</p>
+          <p class="footer-info__text">Подпишись и успей <br> словить все акции</p>
+        </div>
+        <form class="form footer-form" id="form" method="post" action="" onsubmit="javascript:return validate('form','email');">
+          <input type="hidden" name="project_name" value="Pets Shop">
+          <input type="hidden" name="admin_email" value="petsshop@gmail.com">
+          <input type="hidden" name="form_subject" value="Form Subject">
+          <div class="footer-form__box">
+              <input class="footer-form__box-email" type="email" required id="email" name="email" placeholder="Email">
+            <button class="footer-form__box-btn" type="submit">Подписаться</button>
+          </div>
+          <label class="footer-form__inner">
+            <input class="footer-form__subscrb" type="checkbox" value="prise" name="prise">
+            <span class="footer-form__icon"></span>
+            Подписаться на новости
+          </label>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div id="simplemodal-container" class="simplemodal-container">
+    <div class="simplemodal-data" id="exit_content">  
+      <a class="modalCloseImg simplemodal-close" title="Close" id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="close-btn" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.76 511.76" style="enable-background:new 0 0 511.76 511.76;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M436.896,74.869c-99.84-99.819-262.208-99.819-362.048,0c-99.797,99.819-99.797,262.229,0,362.048
+			c49.92,49.899,115.477,74.837,181.035,74.837s131.093-24.939,181.013-74.837C536.715,337.099,536.715,174.688,436.896,74.869z
+			 M361.461,331.317c8.341,8.341,8.341,21.824,0,30.165c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
+			l-75.413-75.435l-75.392,75.413c-4.181,4.16-9.643,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
+			c-8.341-8.341-8.341-21.845,0-30.165l75.392-75.413l-75.413-75.413c-8.341-8.341-8.341-21.845,0-30.165
+			c8.32-8.341,21.824-8.341,30.165,0l75.413,75.413l75.413-75.413c8.341-8.341,21.824-8.341,30.165,0
+			c8.341,8.32,8.341,21.824,0,30.165l-75.413,75.413L361.461,331.317z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+      </a>
+      <div class="simplemodal-data__inner">
+        <p class="simplemodal-data__title">Связаться со мной можно, перейдя по ссылке</p>
+        <div class="simplemodal-data__links">
+
+          <a class="info-social__box" href="https://telegram.im/@ama_creator" target="_blank">
+            <svg class="info-social__box-logo" viewBox="0 -31 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m211 270-40.917969 43.675781 10.917969 76.324219 120-90zm0 0" fill="#00c0f1"/><path d="m0 180 121 60 90 30 210 180 91-450zm0 0" fill="#76e2f8"/><path d="m121 240 60 150 30-120 210-180zm0 0" fill="#25d9f8"/></svg>
+          </a>
+
+          <a class="info-social__box" href="https://wa.me/89198774579">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="info-social__box-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<path style="fill:#4CAF50;" d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104
+	l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"/>
+<path style="fill:#FAFAFA;" d="M405.024,361.504c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264
+	C189.888,347.2,141.44,270.752,137.664,265.792c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304
+	c6.176-6.304,16.384-9.184,26.176-9.184c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64
+	c6.176,14.88,21.216,51.616,23.008,55.392c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744
+	c-3.776,4.352-7.36,7.68-11.136,12.352c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616
+	c28.576,25.44,51.744,33.568,60.032,37.024c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496
+	c5.12-7.232,11.584-8.128,18.368-5.568c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736
+	C411.2,329.152,411.2,344.032,405.024,361.504z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+          </a>
+
+          <a class="info-social__box" href="markduho0@gmail.com">
+            <img class="info-social__box-logo info-social__box-gmail" src="img/gmail.png" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
